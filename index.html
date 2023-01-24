@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="viewport.js" defer></script>
+
+    <title>Guess Number!</title>
+  </head>
+  <body>
+    <div class="" id="current--vh"></div>
+
+    <div class="device">
+      <div class="device-part-r"></div>
+      <div class="device-part-l"></div>
+
+      <div class="monitor">
+        <div class="display">
+          <div class="display-text" id="display">Number ??</div>
+        </div>
+      </div>
+      <div class="control">
+        <span class="label label-score">Score</span>
+        <div class="score" id="score"> </div>
+        <span class="label label-level">Level</span>
+        <div class="level">LV 1</div>
+
+        <input onclick="changeText()" type="text" placeholder="" class="input-number" id="input-number" value="0" />
+        <span class="label label-high-score">High Score</span>
+        <div class="hight-score" id="hight-score">&nbsp;</div>
+        <button onclick="decreaseNumber()" class="btn-left">
+          &nbsp;
+          <div class="arrow-left"></div>
+          <div class="arrow-left-s"></div>
+        </button>
+        <button onclick="increaseNumber()" class="btn-right">
+          &nbsp;
+          <div class="arrow-right"></div>
+          <div class="arrow-right-s"></div>
+        </button>
+        <button onclick="checkNumber()" class="btn" id="btn">Check</button>
+        <button onclick="tryAgain()" class="btn again" id="again">AGAIN !</button>
+      </div>
+    </div>
+  </body>
+</html>
